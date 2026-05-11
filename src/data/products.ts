@@ -1,0 +1,58 @@
+import type { Product } from "@/types/product";
+
+export const products: Product[] = [
+  {
+    id: "vestido-aurora",
+    name: "Vestido Aurora",
+    category: "Vestidos",
+    price: "R$ 289",
+    description: "Modelagem fluida com presença serena e acabamento pensado para ocasiões especiais.",
+    palette: "from-[#ede0cd] via-[#d8bea0] to-[#f8f0e6]",
+    note: "Placeholder editorial vestido",
+  },
+  {
+    id: "conjunto-graca",
+    name: "Conjunto Graça",
+    category: "Feminino",
+    price: "R$ 249",
+    description: "Curadoria delicada para rotina elegante, com equilíbrio entre modéstia e leveza.",
+    palette: "from-[#f3ebe2] via-[#cfb79b] to-[#ded5c8]",
+    note: "Placeholder editorial feminino",
+  },
+  {
+    id: "camisa-alianca",
+    name: "Camisa Aliança",
+    category: "Masculino",
+    price: "R$ 189",
+    description: "Visual limpo e refinado para compor presença masculina com sobriedade contemporânea.",
+    palette: "from-[#dad1c6] via-[#a29181] to-[#f0ebe5]",
+    note: "Placeholder editorial masculino",
+  },
+  {
+    id: "bolsa-essencia",
+    name: "Bolsa Essência",
+    category: "Acessórios",
+    price: "R$ 159",
+    description: "Acessório de acento suave para finalizar produções com textura e discrição premium.",
+    palette: "from-[#f0e5d8] via-[#b99569] to-[#f8f1e9]",
+    note: "Placeholder editorial acessório",
+  },
+  {
+    id: "oleo-lumina",
+    name: "Óleo Lumina",
+    category: "Beleza",
+    price: "R$ 79",
+    description: "Produto de beleza pensado para ritual de cuidado com estética limpa e sensorial.",
+    palette: "from-[#f8eee5] via-[#d7c2a8] to-[#e2d4c6]",
+    note: "Placeholder editorial beleza",
+  },
+  {
+    id: "biblia-devocional",
+    name: "Bíblia Devocional",
+    category: "Bíblias",
+    price: "R$ 129",
+    description: "Edição pensada para leitura diária, presença visual sutil e propósito permanente.",
+    palette: "from-[#eee2d3] via-[#a28159] to-[#f7f0e8]",
+    note: "Placeholder editorial bíblia",
+  },
+];
