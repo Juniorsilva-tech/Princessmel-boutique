@@ -4,6 +4,8 @@ import { ExperienceSection } from "@/components/features/experience-section";
 import { ContactSection } from "@/components/landing/contact-section";
 import { EditorialGallery } from "@/components/landing/editorial-gallery";
 import { HeroSection } from "@/components/landing/hero-section";
+import { PrincessmelClubSection } from "@/components/landing/princessmel-club-section";
+import { WeeklyCollectionSection } from "@/components/landing/weekly-collection-section";
 import { Footer } from "@/components/layout/footer";
 import { Header } from "@/components/layout/header";
 import { ProductsSection } from "@/components/products/products-section";
@@ -17,6 +19,8 @@ export default function HomePage() {
         <Header />
         <main>
           <HeroSection />
+          <WeeklyCollectionSection />
+          <PrincessmelClubSection />
           <CategoriesSection />
           <ProductsSection />
           <PurposeSection />
