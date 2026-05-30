@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, MessageCircle, X } from "lucide-react";
+import { Menu, MessageCircle, UserRound, X } from "lucide-react";
 
 import { BrandSignature } from "@/components/brand/brand-signature";
 import { Container } from "@/components/ui/container";
@@ -12,8 +12,9 @@ import { cn } from "@/lib/utils";
 
 const navigation = [
   { href: "#colecao", label: "Coleção" },
+  { href: "#novidades", label: "Novidades" },
   { href: "#categorias", label: "Categorias" },
-  { href: "#proposito", label: "Propósito" },
+  { href: "#club", label: "Princessmel Club" },
   { href: "#contato", label: "Contato" },
 ];
 
@@ -21,13 +22,13 @@ export function Header() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/40 bg-canvas/75 backdrop-blur-xl">
-      <Container className="flex h-20 items-center justify-between gap-6">
+    <header className="sticky top-0 z-50 border-b border-white/50 bg-canvas/82 backdrop-blur-xl">
+      <Container className="flex h-20 items-center justify-between gap-5">
         <Link href="/" aria-label="Princessmel Boutique">
           <BrandSignature compact />
         </Link>
 
-        <nav className="hidden items-center gap-8 md:flex">
+        <nav className="hidden items-center gap-6 lg:flex">
           {navigation.map((item) => (
             <Link
               key={item.href}
@@ -39,7 +40,14 @@ export function Header() {
           ))}
         </nav>
 
-        <div className="hidden md:block">
+        <div className="hidden items-center gap-3 md:flex">
+          <Link
+            href="/login"
+            className={buttonVariants({ variant: "secondary", size: "sm" })}
+          >
+            <UserRound className="mr-2 h-4 w-4" />
+            Entrar no Club
+          </Link>
           <Link
             href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20Princessmel."
             target="_blank"
@@ -84,6 +92,14 @@ export function Header() {
                   {item.label}
                 </Link>
               ))}
+              <Link
+                href="/login"
+                className={buttonVariants({ variant: "secondary", className: "w-full" })}
+                onClick={() => setOpen(false)}
+              >
+                <UserRound className="mr-2 h-4 w-4" />
+                Entrar no Princessmel Club
+              </Link>
               <Link
                 href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20Princessmel."
                 target="_blank"
