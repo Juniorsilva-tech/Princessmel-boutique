@@ -10,11 +10,11 @@ export function ProductsSection() {
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between">
           <SectionHeading
             eyebrow="Coleção"
-            title="Peças e itens pensados para compor uma experiência de boutique real."
-            description="Cada card foi desenhado para valorizar produto, categoria e atmosfera visual mesmo antes da fotografia final."
+            title="Peças selecionadas para compor uma presença elegante e discreta."
+            description="Escolha por categoria, consulte disponibilidade e reserve diretamente com atendimento próximo."
           />
           <p className="max-w-sm text-sm leading-7 text-graphite">
-            Estrutura pronta para substituir placeholders por campanhas, drops sazonais e coleção contínua.
+            A curadoria reúne moda modesta, acessórios, beleza e itens devocionais dentro de uma mesma atmosfera visual.
           </p>
         </div>
 
