@@ -10,6 +10,7 @@ function getScene(label: string) {
       kind: "dailyWord",
       tag: "Palavra do dia",
       Icon: BookOpen,
+      publicLabel: "Reflexão diária",
     };
   }
 
@@ -18,6 +19,7 @@ function getScene(label: string) {
       kind: "bible",
       tag: "Bíblia",
       Icon: BookOpen,
+      publicLabel: "Bíblia Sagrada",
     };
   }
 
@@ -26,6 +28,7 @@ function getScene(label: string) {
       kind: "beauty",
       tag: "Ritual",
       Icon: Droplets,
+      publicLabel: "Beleza ritual",
     };
   }
 
@@ -34,6 +37,7 @@ function getScene(label: string) {
       kind: "accessory",
       tag: "Acessório",
       Icon: Gem,
+      publicLabel: "Acessório editorial",
     };
   }
 
@@ -42,6 +46,7 @@ function getScene(label: string) {
       kind: "still",
       tag: "Editorial",
       Icon: Sparkles,
+      publicLabel: "Vitrine principal",
     };
   }
 
@@ -49,6 +54,7 @@ function getScene(label: string) {
     kind: "fashion",
     tag: "Foto real em breve",
     Icon: Sparkles,
+    publicLabel: "Peça da coleção",
   };
 }
 
@@ -157,8 +163,8 @@ export function EditorialPlaceholder({
       </div>
 
       <div className="absolute inset-x-6 bottom-6 flex items-center justify-between gap-4 text-[11px] uppercase tracking-[0.28em] text-ink/60">
-        <span>{label}</span>
-        <span>{scene.kind === "fashion" ? "Foto real em breve" : scene.kind === "dailyWord" ? "Reflexão diária" : scene.kind === "bible" ? "Produto físico" : "Arte editorial"}</span>
+        <span>{scene.publicLabel}</span>
+        <span>{scene.kind === "fashion" ? "Foto real em breve" : scene.kind === "dailyWord" ? "Reflexão diária" : scene.kind === "bible" ? "Produto físico" : "Curadoria visual"}</span>
       </div>
     </div>
   );
