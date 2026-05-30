@@ -11,9 +11,8 @@ import { buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navigation = [
-  { href: "#colecao", label: "Coleção" },
   { href: "#novidades", label: "Novidades" },
-  { href: "#categorias", label: "Categorias" },
+  { href: "#colecao", label: "Coleção" },
   { href: "#club", label: "Princessmel Club" },
   { href: "#contato", label: "Contato" },
 ];
@@ -49,13 +48,11 @@ export function Header() {
             Entrar no Club
           </Link>
           <Link
-            href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20Princessmel."
-            target="_blank"
-            rel="noreferrer"
+            href="#contato"
             className={buttonVariants({ size: "sm" })}
           >
             <MessageCircle className="mr-2 h-4 w-4" />
-            WhatsApp
+            Atendimento
           </Link>
         </div>
 
@@ -101,13 +98,12 @@ export function Header() {
                 Entrar no Princessmel Club
               </Link>
               <Link
-                href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20conhecer%20a%20Princessmel."
-                target="_blank"
-                rel="noreferrer"
+                href="#contato"
                 className={buttonVariants({ className: "w-full" })}
+                onClick={() => setOpen(false)}
               >
                 <MessageCircle className="mr-2 h-4 w-4" />
-                Falar no WhatsApp
+                Falar com a boutique
               </Link>
             </Container>
           </motion.div>
