@@ -17,12 +17,8 @@ body {
     radial-gradient(circle at top, rgba(255, 255, 255, 0.7), transparent 28%),
     linear-gradient(180deg, #f8f4ee 0%, #f2eadf 44%, #f6f0e8 100%);
   color: #1f1a17;
-  font-family:
-    "Avenir Next",
-    "Segoe UI",
-    "Helvetica Neue",
-    Arial,
-    sans-serif;
+  font-family: var(--font-sans), "Avenir Next", "Segoe UI", sans-serif;
+  letter-spacing: -0.012em;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
 }
@@ -34,13 +30,17 @@ h4,
 h5,
 h6,
 .font-serif {
-  font-family:
-    Baskerville,
-    "Iowan Old Style",
-    "Palatino Linotype",
-    "Book Antiqua",
-    Georgia,
-    serif;
+  font-family: var(--font-display), Baskerville, Georgia, serif;
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+button,
+a,
+input,
+textarea,
+select {
+  font-family: var(--font-sans), "Avenir Next", "Segoe UI", sans-serif;
 }
 
 a {
