@@ -14,4 +14,5 @@ export type Product = {
   description: string;
   palette: string;
   note: string;
+  badge?: "Novo" | "Mais vendido" | "Exclusivo" | "Curadoria";
 };
