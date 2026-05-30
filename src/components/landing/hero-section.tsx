@@ -34,7 +34,7 @@ export function HeroSection() {
                   Elegância discreta.
                 </h1>
                 <p className="mt-7 max-w-lg text-base leading-8 text-ivory/74 sm:text-lg">
-                  Peças femininas e masculinas, acessórios, beleza e itens devocionais para vestir com propósito, presença e leveza.
+                  Peças femininas e masculinas, acessórios, beleza, Bíblias e Palavra do Dia para vestir e viver com propósito.
                 </p>
               </div>
 
@@ -53,7 +53,7 @@ export function HeroSection() {
                 </div>
 
                 <div className="mt-8 grid gap-3 border-t border-ivory/12 pt-6 sm:grid-cols-3">
-                  {["Reserva por conversa", "Curadoria local", "Club para parcelas"].map((item) => (
+                  {["Reserva por conversa", "Curadoria local", "Palavra do dia"].map((item) => (
                     <p key={item} className="text-xs uppercase tracking-[0.22em] text-ivory/58">
                       {item}
                     </p>
@@ -87,7 +87,7 @@ export function HeroSection() {
                   </div>
 
                   <EditorialPlaceholder
-                    label="Devocional"
+                    label="Palavra do dia"
                     palette="from-[#f7f1e8] via-[#bda181] to-[#e5d8c6]"
                     className="min-h-[210px] rounded-[2rem]"
                   />
