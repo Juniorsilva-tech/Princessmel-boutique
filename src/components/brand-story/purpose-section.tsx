@@ -3,16 +3,16 @@ import { SectionHeading } from "@/components/ui/section-heading";
 
 const pillars = [
   {
-    title: "Fé sem clichê visual",
-    description: "A linguagem cristã aparece em intenção, postura e copy, não em excesso de símbolos ou apelo previsível.",
+    title: "Fé com delicadeza",
+    description: "A identidade aparece em postura, escolha das peças e atendimento cuidadoso, sem excesso visual.",
   },
   {
     title: "Modéstia sofisticada",
-    description: "Peças e apresentação preservam discrição, mas com acabamento editorial e percepção de valor real.",
+    description: "Peças e apresentação preservam discrição, mas com acabamento editorial e percepção de valor.",
   },
   {
-    title: "Boutique com ambição",
-    description: "Princessmel nasce local, com atendimento próximo, e se posiciona como marca pronta para crescer com consistência.",
+    title: "Boutique próxima",
+    description: "Uma curadoria local com atendimento humano, reserva por conversa e experiência pensada para cada cliente.",
   },
 ];
 
@@ -23,19 +23,18 @@ export function PurposeSection() {
         <div className="rounded-[2.25rem] border border-white/65 bg-ink px-7 py-10 text-ivory shadow-velvet sm:px-10">
           <p className="text-xs uppercase tracking-[0.3em] text-champagne">Propósito</p>
           <h2 className="mt-6 font-serif text-4xl leading-tight sm:text-5xl">
-            Vestidos para a glória de Deus.
+            Vestir com intenção, presença e propósito.
           </h2>
           <p className="mt-6 max-w-xl text-base leading-8 text-ivory/78">
-            A Princessmel combina delicadeza, presença e clareza para vestir mulheres e homens com intenção. O resultado
-            não é um site gospel genérico, mas uma boutique contemporânea que sabe comunicar fé com refinamento.
+            A Princessmel combina delicadeza, clareza e curadoria para mulheres e homens que buscam uma presença elegante, modesta e contemporânea.
           </p>
         </div>
 
         <div className="lg:pl-6">
           <SectionHeading
             eyebrow="Essência da marca"
-            title="Uma microempresa local com leitura premium, comercial e sensível."
-            description="O posicionamento visual foi construído para parecer uma boutique moderna: limpa, editorial, acessível e memorável."
+            title="Uma boutique local com leitura premium, sensível e comercial."
+            description="A experiência foi pensada para unir produto, conversa e propósito em uma vitrine limpa, acessível e memorável."
           />
 
           <div className="mt-10 space-y-4">
