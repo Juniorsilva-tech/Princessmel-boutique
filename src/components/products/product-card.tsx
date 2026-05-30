@@ -31,19 +31,18 @@ export function ProductCard({ product }: { product: Product }) {
 
         <p className="mt-4 text-sm leading-7 text-graphite">{product.description}</p>
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-[1fr_auto]">
+        <div className="mt-6 grid gap-3 sm:grid-cols-2">
           <button type="button" className={buttonVariants({ variant: "secondary", className: "w-full" })}>
             Ver peça
             <ArrowRight className="ml-2 h-4 w-4 transition group-hover:translate-x-0.5" />
           </button>
           <a
-            href={`https://wa.me/5500000000000?text=${encodeURIComponent(`Olá, quero reservar ou consultar disponibilidade da peça ${product.name}.`)}`}
-            target="_blank"
-            rel="noreferrer"
-            className={buttonVariants({ className: "w-full sm:w-12 sm:px-0" })}
-            aria-label={`Reservar ${product.name} no WhatsApp`}
+            href="#contato"
+            className={buttonVariants({ className: "w-full" })}
+            aria-label={`Reservar ${product.name}`}
           >
-            <MessageCircle className="h-4 w-4" />
+            <MessageCircle className="mr-2 h-4 w-4" />
+            Reservar
           </a>
         </div>
       </div>
