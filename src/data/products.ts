@@ -52,13 +52,13 @@ export const products: Product[] = [
     badge: "Curadoria",
   },
   {
-    id: "biblia-devocional",
-    name: "Bíblia Devocional",
+    id: "biblia-sagrada",
+    name: "Bíblia Sagrada",
     category: "Bíblias",
     price: "R$ 129",
-    description: "Edição pensada para leitura diária, presença visual sutil e propósito permanente.",
+    description: "Produto físico para leitura diária, presente com significado e presença visual discreta.",
     palette: "from-[#eee2d3] via-[#a28159] to-[#f7f0e8]",
-    note: "Placeholder editorial bíblia",
+    note: "Placeholder editorial bíblia produto",
     badge: "Exclusivo",
   },
 ];
