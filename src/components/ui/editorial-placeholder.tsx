@@ -5,10 +5,18 @@ import { cn } from "@/lib/utils";
 function getScene(label: string) {
   const normalized = label.toLowerCase();
 
-  if (normalized.includes("bíblia") || normalized.includes("devocional")) {
+  if (normalized.includes("palavra") || normalized.includes("devocional")) {
+    return {
+      kind: "dailyWord",
+      tag: "Palavra do dia",
+      Icon: BookOpen,
+    };
+  }
+
+  if (normalized.includes("bíblia") || normalized.includes("biblia")) {
     return {
       kind: "bible",
-      tag: "Devocional",
+      tag: "Bíblia",
       Icon: BookOpen,
     };
   }
@@ -69,6 +77,21 @@ export function EditorialPlaceholder({
       <div className="absolute -left-12 top-10 h-44 w-44 rounded-full bg-white/20 blur-2xl" />
       <div className="absolute -bottom-12 right-0 h-52 w-52 rounded-full bg-ink/10 blur-2xl" />
 
+      {scene.kind === "dailyWord" ? (
+        <div className="absolute inset-0 flex items-center justify-center px-7 py-8">
+          <div className="relative w-full max-w-[300px] rounded-[1.5rem] border border-white/35 bg-ink/62 p-6 text-center text-ivory shadow-velvet backdrop-blur-sm transition duration-500 group-hover:-translate-y-1 group-hover:scale-[1.015]">
+            <p className="text-[10px] uppercase tracking-[0.32em] text-champagne/80">Palavra do dia</p>
+            <p className="mt-5 font-serif text-3xl leading-tight">Graça para hoje.</p>
+            <p className="mx-auto mt-4 max-w-[220px] text-xs leading-6 text-ivory/70">
+              Uma reflexão curta para abrir o dia com fé, direção e paz.
+            </p>
+            <div className="mx-auto mt-5 flex h-10 w-10 items-center justify-center rounded-full border border-champagne/35 text-champagne">
+              <BookOpen className="h-4 w-4" />
+            </div>
+          </div>
+        </div>
+      ) : null}
+
       {scene.kind === "bible" ? (
         <div className="absolute inset-0 flex items-center justify-center px-10 pb-12 pt-8">
           <div className="relative h-[68%] w-[68%] max-w-[270px] rounded-[1.2rem] border border-ink/12 bg-[#5b4432]/90 shadow-velvet transition duration-500 group-hover:-rotate-2 group-hover:scale-[1.025]">
@@ -79,8 +102,8 @@ export function EditorialPlaceholder({
               <BookOpen className="h-5 w-5" />
             </div>
             <div className="absolute bottom-7 left-8 right-8">
-              <p className="font-serif text-2xl text-ivory">Palavra</p>
-              <p className="mt-2 text-[10px] uppercase tracking-[0.28em] text-champagne/80">Leitura diária</p>
+              <p className="font-serif text-2xl text-ivory">Bíblia Sagrada</p>
+              <p className="mt-2 text-[10px] uppercase tracking-[0.28em] text-champagne/80">Produto físico</p>
             </div>
           </div>
           <div className="absolute bottom-[21%] left-[18%] h-12 w-28 rounded-full bg-white/30 blur-md" />
@@ -135,7 +158,7 @@ export function EditorialPlaceholder({
 
       <div className="absolute inset-x-6 bottom-6 flex items-center justify-between gap-4 text-[11px] uppercase tracking-[0.28em] text-ink/60">
         <span>{label}</span>
-        <span>{scene.kind === "fashion" ? "Reservado para foto" : "Arte editorial"}</span>
+        <span>{scene.kind === "fashion" ? "Foto real em breve" : scene.kind === "dailyWord" ? "Reflexão diária" : scene.kind === "bible" ? "Produto físico" : "Arte editorial"}</span>
       </div>
     </div>
   );
