@@ -23,7 +23,7 @@ export function ContactSection() {
             Reserva por conversa, curadoria próxima e acompanhamento pelo Club.
           </p>
           <p className="mt-5 max-w-xl text-sm leading-7 text-graphite">
-            O canal oficial de WhatsApp deve ser conectado ao número comercial da Princessmel. O Instagram será adicionado assim que o perfil oficial for definido.
+            Converse com a Princessmel para consultar tamanhos, separar peças, combinar retirada ou entrega e acompanhar compras pelo Club.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
@@ -46,11 +46,11 @@ export function ContactSection() {
           <div className="mt-8 grid gap-4 border-t border-graphite/10 pt-6 text-sm text-graphite sm:grid-cols-2">
             <div>
               <p className="uppercase tracking-[0.2em] text-brass">Canal principal</p>
-              <p className="mt-2">WhatsApp para reservas, dúvidas e disponibilidade.</p>
+              <p className="mt-2">WhatsApp para reservas, dúvidas, disponibilidade e atendimento direto.</p>
             </div>
             <div>
               <p className="uppercase tracking-[0.2em] text-brass">Presença social</p>
-              <p className="mt-2">Instagram oficial será conectado na próxima etapa.</p>
+              <p className="mt-2">Novidades, bastidores de coleção e Palavra do Dia em breve no perfil oficial.</p>
             </div>
           </div>
         </div>
