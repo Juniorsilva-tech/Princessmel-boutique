@@ -1,8 +1,4 @@
-import { PurposeSection } from "@/components/brand-story/purpose-section";
-import { CategoriesSection } from "@/components/categories/categories-section";
-import { ExperienceSection } from "@/components/features/experience-section";
 import { ContactSection } from "@/components/landing/contact-section";
-import { EditorialGallery } from "@/components/landing/editorial-gallery";
 import { HeroSection } from "@/components/landing/hero-section";
 import { PrincessmelClubSection } from "@/components/landing/princessmel-club-section";
 import { WeeklyCollectionSection } from "@/components/landing/weekly-collection-section";
@@ -20,12 +16,8 @@ export default function HomePage() {
         <main>
           <HeroSection />
           <WeeklyCollectionSection />
-          <PrincessmelClubSection />
-          <CategoriesSection />
           <ProductsSection />
-          <PurposeSection />
-          <EditorialGallery />
-          <ExperienceSection />
+          <PrincessmelClubSection />
           <ContactSection />
         </main>
         <Footer />
