@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowUpRight, Instagram, MessageCircle } from "lucide-react";
+import { MessageCircle, UserRound } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
@@ -12,52 +12,45 @@ export function ContactSection() {
         <div>
           <SectionHeading
             eyebrow="Contato"
-            title="Uma vitrine premium que convida a conversa certa."
-            description="Canal direto para reservas, consulta de disponibilidade e relacionamento com clientes da Princessmel."
+            title="Atendimento próximo para escolher, reservar e acompanhar suas peças."
+            description="Fale com a boutique para consultar disponibilidade, reservar produtos e entender o Princessmel Club."
           />
         </div>
 
         <div className="rounded-[2.25rem] border border-white/60 bg-gradient-to-br from-white/70 via-ivory/75 to-cream/80 p-7 shadow-velvet sm:p-10">
           <p className="text-xs uppercase tracking-[0.3em] text-brass">Fale com a boutique</p>
           <p className="mt-5 max-w-xl font-serif text-3xl leading-tight text-ink sm:text-4xl">
-            Atendimento próximo para moda, acessórios, beleza e itens devocionais.
+            Reserva por conversa, curadoria próxima e acompanhamento pelo Club.
           </p>
           <p className="mt-5 max-w-xl text-sm leading-7 text-graphite">
-            Substitua os links por canais oficiais e transforme a landing em vitrine comercial ativa sem alterar a base de design.
+            O canal oficial de WhatsApp deve ser conectado ao número comercial da Princessmel. O Instagram será adicionado assim que o perfil oficial for definido.
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row">
             <Link
-              href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20ver%20as%20pe%C3%A7as%20da%20Princessmel."
-              target="_blank"
-              rel="noreferrer"
+              href="#colecao"
               className={buttonVariants({ className: "sm:min-w-48" })}
             >
               <MessageCircle className="mr-2 h-4 w-4" />
-              Chamar no WhatsApp
+              Ver peças
             </Link>
             <Link
-              href="https://instagram.com/princessmelboutique"
-              target="_blank"
-              rel="noreferrer"
+              href="/login"
               className={buttonVariants({ variant: "secondary", className: "sm:min-w-48" })}
             >
-              <Instagram className="mr-2 h-4 w-4" />
-              Ver Instagram
+              <UserRound className="mr-2 h-4 w-4" />
+              Entrar no Club
             </Link>
           </div>
 
           <div className="mt-8 grid gap-4 border-t border-graphite/10 pt-6 text-sm text-graphite sm:grid-cols-2">
             <div>
               <p className="uppercase tracking-[0.2em] text-brass">Canal principal</p>
-              <p className="mt-2">WhatsApp para reservas e atendimento.</p>
+              <p className="mt-2">WhatsApp para reservas, dúvidas e disponibilidade.</p>
             </div>
             <div>
               <p className="uppercase tracking-[0.2em] text-brass">Presença social</p>
-              <p className="mt-2 inline-flex items-center gap-2">
-                Instagram para coleção, lançamentos e editorial.
-                <ArrowUpRight className="h-4 w-4" />
-              </p>
+              <p className="mt-2">Instagram oficial será conectado na próxima etapa.</p>
             </div>
           </div>
         </div>
