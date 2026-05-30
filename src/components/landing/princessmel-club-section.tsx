@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { CreditCard, MessageCircle, ShieldCheck, WalletCards } from "lucide-react";
+import { CreditCard, ShieldCheck, WalletCards } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
 import { buttonVariants } from "@/components/ui/button";
@@ -13,12 +13,12 @@ const features = [
   {
     icon: WalletCards,
     title: "Parcelas claras",
-    description: "Valores pagos, próximos vencimentos e histórico ficam organizados em poucos toques.",
+    description: "Valores pagos, próximos vencimentos e histórico ficam organizados com leitura rápida.",
   },
   {
     icon: ShieldCheck,
-    title: "Controle da boutique",
-    description: "O admin visualiza clientes, cobranças e saldos sem depender de planilha solta.",
+    title: "Atendimento seguro",
+    description: "A boutique mantém cobranças, clientes e compras com mais organização e clareza.",
   },
 ];
 
@@ -35,20 +35,17 @@ export function PrincessmelClubSection() {
                 Compre, acompanhe parcelas e consulte seu saldo com clareza.
               </h2>
               <p className="mt-5 max-w-xl text-sm leading-7 text-ivory/72">
-                Uma área simples para clientes visualizarem quanto falta quitar e para a boutique organizar cobranças com mais presença profissional.
+                Uma área simples para clientes acompanharem compras, vencimentos e valores restantes com a mesma elegância da boutique.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                 <Link href="/login" className={buttonVariants({ className: "border-champagne bg-champagne text-ink hover:border-ivory hover:bg-ivory" })}>
                   Entrar no Club
                 </Link>
                 <Link
-                  href="https://wa.me/5500000000000?text=Ol%C3%A1%2C%20quero%20saber%20como%20funciona%20o%20Princessmel%20Club."
-                  target="_blank"
-                  rel="noreferrer"
+                  href="#contato"
                   className={buttonVariants({ variant: "secondary", className: "border-ivory/20 bg-ivory/8 text-ivory hover:bg-ivory/15" })}
                 >
-                  <MessageCircle className="mr-2 h-4 w-4" />
-                  Perguntar no WhatsApp
+                  Falar com a boutique
                 </Link>
               </div>
             </div>
