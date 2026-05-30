@@ -14,7 +14,7 @@ export function BrandSignature({
       <div className="min-w-0">
         <p className="font-serif text-xl tracking-[0.08em] text-ink sm:text-2xl">Princessmel</p>
         <p className="text-[10px] uppercase tracking-[0.3em] text-graphite/70 sm:text-[11px]">
-          Boutique with purpose
+          Boutique com propósito
         </p>
       </div>
     </div>
